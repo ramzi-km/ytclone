@@ -1,0 +1,140 @@
+
+.header{
+    display: flex;
+    height: 55px;
+    justify-content: space-between;
+    background-color: white;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: rgb(212, 212, 212);
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+
+}
+.left-section{
+    display: flex;
+    align-items: center;
+}
+.menu-icon{
+    height: 16px;
+    margin-left: 24px;
+    margin-right: 24px ;
+}
+.ytlogo{
+    height: 24px;
+}
+.middle-section{
+    display: flex;
+    align-items: center;
+    flex: 1;
+    margin-left: 70px;
+    margin-right: 35px;
+    max-width: 500px;
+}
+.search-bar{
+    flex: 1;
+    width: 0;
+    height: 36px;
+    padding-left: 10px;
+    font-size: 16px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(182, 182, 182);
+    border-radius: 2px;
+    box-shadow: inset 1px 2px 4px rgba(0, 0, 0, 0.05);
+}
+.search-bar::placeholder{
+    font-size: 16px;
+
+}
+.search-button{
+    height: 40px;
+    width: 60px;
+    background-color: rgb(237, 237, 237);
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(182, 182, 182);
+    margin-left: -1px;
+    margin-right: 10px;
+
+    
+}
+.search-button,.voice-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.search-button .tooltip,.voice-button .tooltip{
+    position: absolute;
+    background-color: grey;
+    color: white;
+    padding: 8px;
+    border-radius: 2px;
+    font-size: 12px;
+
+    bottom: -40px;
+    opacity: 0;
+    transition: opacity 0.15s;
+    pointer-events: none;
+    white-space: nowrap;
+}
+.search-button:hover .tooltip,.voice-button:hover .tooltip{
+    opacity: 1;
+}
+.search-icon{
+    height: 18px;
+}
+.voice-button{
+    height: 40px;
+    width: 40px;
+    border-radius: 20px;
+    border: none;
+    background-color: rgb(237, 237, 237); 
+}
+.voice-icon{
+    height: 20px;
+}
+.right-section{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 24px;
+    width: 180px;
+    flex-shrink: 0;
+}
+.create-icon{
+    height: 16px;
+}
+.app-icon{
+    height: 16px;
+}
+.notif-container{
+    position: relative;
+}
+.notificaton-icon{
+    height: 16px;
+}
+.notif-count{
+    position: absolute;
+    top: -5px;
+    right: -7px;
+
+    background-color: brown;
+    color: white;
+    font-size: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    border-radius: 10px;
+
+}
+.account-icon{
+    height: 32px;
+    border-radius: 16px;
+}
